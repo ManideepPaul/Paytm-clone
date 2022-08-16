@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        lightSky: '#00BAF2',
+                        lightSky: '#65D6FF',
                         blue: '#012970',
                         firstBg: '#FFFFFF',
                         secBg: '#f5f7fa',
@@ -25,7 +29,7 @@
 </head>
 
 <body>
-    <div class="mainContainer font-[Inter,sans-serif]">
+    <div class="mainContainer font-['Inter', sans-serif] box-border overflow-x-hidden">
         <!-- Nav Section -->
         <nav class="navbar flex justify-between items-center py-2.5 px-5 xl:px-10 xl:py-5 shadow-lg">
             <div class="nav-first">
@@ -197,7 +201,7 @@
         </section>
         <!-- Payment Section -->
         <section class="payment-section bg-secBg p-10 xl:p-28">
-            <h1 class="text-5xl font-semibold">Paytm Payment Instruments</h1>
+            <h1 class="text-5xl font-bold">Paytm Payment Instruments</h1>
             <!-- First Card -->
             <div class="bg-firstBg rounded-lg p-10 mt-8 flex justify-center items-center flex-wrap gap-10">
                 <div class="payment-right">
@@ -207,7 +211,7 @@
                         <span class="font-bold">Paytm <br> Wallet</span>
                     </div>
                     <div class="flex flex-col gap-y-10">
-                        <div class="text-4xl font-semibold">
+                        <div class="text-4xl font-bold">
                             The Fastest Way to <br> Pay In-store &amp; Online.
                         </div>
                         <span class="text-[17px] font-semibold w-[400px]">
@@ -252,7 +256,7 @@
                         <span class="font-bold">UPI Money <br> Transfer</span>
                     </div>
                     <div class="flex flex-col gap-y-10">
-                        <div class="text-4xl font-semibold">
+                        <div class="text-4xl font-bold">
                             Pay anyone directly <br> from your bank <br> account.
                         </div>
                         <span class="text-[17px] font-semibold w-[400px]">
@@ -297,7 +301,7 @@
                                 " alt="">
                     </div>
                     <div class="flex flex-col gap-y-10">
-                        <div class="text-4xl font-semibold">
+                        <div class="text-4xl font-bold">
                             Want it? <br> No more waiting for it.
                         </div>
                         <span class="text-[17px] font-semibold w-[400px]">
@@ -442,12 +446,12 @@
         </section>
         <!-- Business Section -->
         <section class="payment-section bg-firstBg p-10 xl:p-28">
-            <h1 class="text-5xl font-semibold">Business Services by Paytm</h1>
+            <h1 class="text-5xl font-bold">Business Services by Paytm</h1>
             <!-- First Card -->
             <div
                 class="bg-secBg rounded-lg p-20 pr-0 mt-8 flex flex-col justify-between items-center gap-10 xl:flex-row">
                 <div class="flex flex-col gap-y-10 self-start xl:self-center">
-                    <div class="text-4xl font-semibold">
+                    <div class="text-4xl font-bold">
                         Accept payments <br> online with ease
                     </div>
                     <span class="text-[17px] font-semibold w-[420px]">
@@ -467,7 +471,7 @@
             <div
                 class="bg-secBg rounded-lg p-20 pr-0 mt-8 flex flex-col justify-between items-center gap-10 xl:flex-row">
                 <div class="flex flex-col gap-y-10 self-start xl:self-center">
-                    <div class="text-4xl font-semibold">
+                    <div class="text-4xl font-bold">
                         In-shop payments <br> powered by Paytm.
                     </div>
                     <span class="text-[17px] font-semibold w-[420px]">
@@ -532,38 +536,103 @@
                 </div>
             </div>
         </section>
-        <!-- Paytm Money section -->
+        <!-- Paytm Money Cards -->
         <div class="bg-[#F0FBFF] flex flex-wrap justify-between mt-10 gap-10 p-10">
             <div class="wrapper bg-firstBg w-full rounded-lg flex justify-center flex-wrap">
                 <div class="  flex flex-col gap-12 p-16 rounded-lg">
                     <img class="w-[160px]"
                         src="https://assetscdn1.paytm.com/images/catalog/view/307196/1626420555412.png" alt="">
                     <p class="text-[15px] font-medium">
-                        Get started on wealth <br> creation journey with Zero <br> brokerage fee & no hidden <br> charges.
+                        Get started on wealth <br> creation journey with Zero <br> brokerage fee & no hidden <br>
+                        charges.
                     </p>
                     <h5 class="text-[17px] font-bold mt-[-40px] text-lightSky">Learn More</h5>
                 </div>
                 <div class="cards flex items-center gap-8 flex-wrap justify-center items-center">
                     <div class="card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl ">
-                        <img class="w-[145px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="">
+                        <img class="w-[145px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png" alt="">
                         <h5 class="text-[17px] text-center font-extrabold text-white">Invest in <br> Stocks</h5>
                     </div>
                     <div class="card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl ">
-                        <img class="w-[145px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="">
+                        <img class="w-[145px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png" alt="">
                         <h5 class="text-[17px] text-center font-extrabold text-white">Apply for IPO</h5>
                     </div>
                     <div class="card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl ">
-                        <img class="w-[145px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="">
+                        <img class="w-[145px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png" alt="">
                         <h5 class="text-[17px] text-center font-extrabold text-white">Invest in <br> ETFs</h5>
                     </div>
                     <div class="card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl ">
-                        <img class="w-[145px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="">
+                        <img class="w-[145px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png" alt="">
                         <h5 class="text-[17px] text-center font-extrabold text-white">Buy Gold</h5>
                     </div>
                     <div class="card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl ">
-                        <img class="w-[145px]" src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="">
+                        <img class="w-[145px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png" alt="">
                         <h5 class="text-[17px] text-center font-extrabold text-white">Invest in <br> Mutual Funds</h5>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paytm Travel -->
+        <div class="bg-[#F0FBFF] flex flex-wrap justify-between mt-10 gap-10 p-10">
+            <div class="wrapper bg-firstBg w-full rounded-lg flex justify-center flex-wrap">
+                <div class="  flex flex-col gap-12 p-16 rounded-lg">
+                    <img class="w-[160px]"
+                        src="https://assetscdn1.paytm.com/images/catalog/view/307197/1626419838546.png" alt="">
+                    <p class="text-[15px] font-medium">
+                        Best travel solutions with <br> quick ticket bookings, great <br> offers and easy refunds
+                    </p>
+                    <h5 class="text-[17px] font-bold mt-[-40px] text-lightSky">Learn More</h5>
+                </div>
+                <div class="cards flex items-center gap-8 flex-wrap justify-center items-center">
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-end gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/863734/1627552693557.png" alt="">
+                        <h5 class="text-[17px] font-bold text-white">Flat 14% <br> Cashback <br> <span class="text-xs">With Code <br> WELCOMEFLIGHT</span></h5>
+                    </div>
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864144/1627566096011.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">100% Refund <br> <span class="text-xs">With Paytm's <br> Cancellation Protect</span></h5>
+                    </div>
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">Flat 10% <br> Cashback <br> <span class="text-xs">With Code HAPPYBUS</span></h5>
+                    </div>
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864145/1627566172335.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">Flat 10% <br> Cashback <br> <span class="text-xs">With Code HAPPYBUS</span></h5>
+                    </div>
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864151/1627567062180.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">
+                            Sanitised Bus <br> Option With <br> TravelSafe+</h5>
+                    </div>
+                    <!-- <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864152/1627566492097.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">
+                            Hassle Free <br> Train Ticket <br> Bookings</h5>
+                    </div>
+                    <div class="card bg-lightSky h-[250px] w-[161px] flex flex-col items-start justify-center gap-6 p-2 rounded-xl ">
+                        <img class="w-[72px]"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/864153/1627566396231.png
+                            " alt="">
+                        <h5 class="text-[17px] font-bold text-white">
+                            PNR Status <br> Check In Few <br> Simple Clicks</h5>
+                    </div> -->
                 </div>
             </div>
         </div>
