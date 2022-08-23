@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="https://paytm.com/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://paytm.com/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -27,9 +31,14 @@
       };
     </script>
     <style>
-        .nav-btn:hover .user-bg{
-            fill: #65D6FF;
-        }
+      .nav-btn:hover .user-bg {
+        fill: #65d6ff;
+      }
+
+      .hero-btn:hover .apple,
+      .hero-btn:hover .play {
+        fill: #000000;
+      }
     </style>
   </head>
   <title>Paytm-clone</title>
@@ -56,13 +65,21 @@
         <div
           class="links text-lg font-semibold gap-x-10 hidden xl:flex text-[17px]"
         >
-          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm">Paytm for Consumer</a>
-          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm">Paytm For Business</a>
+          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm"
+            >Paytm for Consumer</a
+          >
+          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm"
+            >Paytm For Business</a
+          >
           <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm">Company</a>
-          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm">Investor Relations</a>
+          <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm"
+            >Investor Relations</a
+          >
           <a href="#" class="link hover:bg-[#F5F7FA] p-2 rounded-sm">Career</a>
         </div>
-        <div class="nav-btn nav-sec p-1 bg-lightSky rounded-3xl flex items-center hover:bg-[#002970]">
+        <div
+          class="nav-btn nav-sec p-1 bg-lightSky rounded-3xl flex items-center hover:bg-[#002970]"
+        >
           <span class="px-2.5 text-xs font-semibold text-firstBg xl:hidden"
             >Log In</span
           >
@@ -70,11 +87,23 @@
             class="px-2.5 text-md font-semibold text-firstBg hidden xl:inline-block pb-0.5"
             >Sign In</span
           >
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="user-bg" cx="17" cy="17" r="17" fill="#002970"/>
-            <circle cx="17" cy="14.7331" r="7.93333" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z" fill="white"/>
-            </svg>
+          <!-- User Svg -->
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="user-bg" cx="17" cy="17" r="17" fill="#002970" />
+            <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </nav>
       <!-- Banner Section -->
@@ -111,48 +140,39 @@
             more.
           </div>
           <div
-            class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px]"
+            class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px] hover:bg-white hover:text-black border-black border duration-200"
           >
             <span>Download Paytm App</span>
-
-            <a
-              href="https://itunes.apple.com/in/app/mobile-recharge-bill-payments/id473941634?mt=8"
-              target="_blank"
-              rel="noopener noreferrer"
+            <!-- Apple Svg -->
+            <svg
+              width="14"
+              height="16"
+              viewBox="0 0 14 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 14 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
-                  fill="#FFFFFF"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=net.one97.paytm"
-              target="_blank"
-              rel="noopener noreferrer"
+              <path
+                class="apple"
+                d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                fill="#FFFFFF"
+              ></path>
+            </svg>
+            <!-- Play Store Svg -->
+            <svg
+              width="14"
+              height="16"
+              viewBox="0 0 14 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 14 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
-                  fill="#FFFFFF"
-                ></path>
-              </svg>
-            </a>
+              <path
+                class="play"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                fill="#FFFFFF"
+              ></path>
+            </svg>
           </div>
         </div>
         <img
@@ -385,48 +405,39 @@
                 at over 21 million stores, websites and apps.
               </span>
               <div
-                class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px]"
+                class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px] hover:bg-white hover:text-black border-black border duration-200"
               >
                 <span>Download Paytm App</span>
-
-                <a
-                  href="https://itunes.apple.com/in/app/mobile-recharge-bill-payments/id473941634?mt=8"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <!-- Apple Svg -->
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=net.one97.paytm"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <path
+                    class="apple"
+                    d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </svg>
+                <!-- Play Store Svg -->
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </svg>
-                </a>
+                  <path
+                    class="play"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </svg>
               </div>
             </div>
           </div>
@@ -465,48 +476,39 @@
                 Bank Account. Plus, send & receive money from anyone
               </span>
               <div
-                class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px]"
+                class="hero-btn flex items-center justify-center gap-x-3 w-[270px] font-semibold bg-black text-white px-6 py-4 rounded-[30px] hover:bg-white hover:text-black border-black border duration-200"
               >
                 <span>Download Paytm App</span>
-
-                <a
-                  href="https://itunes.apple.com/in/app/mobile-recharge-bill-payments/id473941634?mt=8"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <!-- Apple Svg -->
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=net.one97.paytm"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <path
+                    class="apple"
+                    d="M11.6593 15.3557C10.7589 16.1979 9.76546 16.0666 8.81854 15.6695C7.81182 15.2644 6.89149 15.2388 5.82828 15.6695C4.50426 16.2203 3.80155 16.0602 3.00415 15.3557C-1.49786 10.8883 -0.833353 4.08311 4.28331 3.82691C5.52427 3.89096 6.39311 4.48821 7.12406 4.53785C8.21052 4.32489 9.25047 3.71483 10.4133 3.79489C11.8105 3.90377 12.8554 4.43538 13.5531 5.3913C10.6791 7.05657 11.3603 10.7073 14 11.7321C13.4717 13.0691 12.7939 14.3902 11.6576 15.3669L11.6593 15.3557ZM7.02439 3.77888C6.88982 1.79336 8.55939 0.160122 10.4798 0C10.7439 2.28974 8.32017 4.00305 7.02439 3.77888Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </svg>
+                <!-- Play Store Svg -->
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    width="14"
-                    height="16"
-                    viewBox="0 0 14 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
-                      fill="#FFFFFF"
-                    ></path>
-                  </svg>
-                </a>
+                  <path
+                    class="play"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.088012 0.571735C0.0310801 0.726729 0 0.910797 0 1.121V14.8786C0 15.0894 0.0311427 15.2736 0.0881839 15.4286L7.32808 7.9997L0.088012 0.571735ZM0.590122 15.9564C0.85223 16.0466 1.18264 15.9995 1.54068 15.7912L10.0736 10.8165L7.83627 8.52109L0.590122 15.9564ZM10.7221 10.4391L13.3647 8.8987C14.2118 8.40415 14.2118 7.59609 13.3647 7.10217L10.7211 5.561L8.34443 7.99966L10.7221 10.4391ZM10.073 5.18317L1.54068 0.209061C1.18252 0.000250885 0.852017 -0.0466058 0.589868 0.0438429L7.83624 7.47828L10.073 5.18317Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </svg>
               </div>
             </div>
           </div>
