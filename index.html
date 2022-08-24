@@ -31,6 +31,22 @@
       };
     </script>
     <style>
+      /* Scroll bar */
+      body {
+        position: relative;
+        scrollbar-width: thin;
+      }
+
+      body::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: #65d6ff;
+        border-radius: 10px;
+      }
+      /* Scroll bar */
+
       .nav-btn:hover .user-bg {
         fill: #65d6ff;
       }
@@ -675,7 +691,8 @@
             <div
               class="learn-btn flex items-center justify-center gap-x-3 w-[185px] font-semibold bg-blue text-white pl-4 py-6 rounded-lg hover:bg-[#042153] relative duration-200"
             >
-              <span class="text-[20px]">Learn More</span><!-- hr svg-->
+              <span class="text-[20px]">Learn More</span
+              ><!-- hr svg-->
               <svg
                 class="hr absolute top-[27px] right-[22px] origin-left scale-0 duration-300"
                 xmlns="http://www.w3.org/2000/svg"
@@ -1180,13 +1197,13 @@
             <div
               class="pm-card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl"
             >
-            <div class="div overflow-hidden rounded-xl">
+              <div class="div overflow-hidden rounded-xl">
                 <img
                   class="w-[145px] pm-img duration-300"
                   src="https://assetscdn1.paytm.com/images/catalog/view_item/728894/1618576143299.png"
                   alt=""
                 />
-            </div>
+              </div>
               <h5 class="text-[17px] text-center font-bold text-white">
                 Invest in <br />
                 Stocks
@@ -1195,13 +1212,13 @@
             <div
               class="pm-card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl"
             >
-            <div class="div overflow-hidden rounded-xl">
+              <div class="div overflow-hidden rounded-xl">
                 <img
                   class="w-[145px] pm-img duration-300"
                   src="https://assetscdn1.paytm.com/images/catalog/view_item/728895/1618575899205.png"
                   alt=""
                 />
-            </div>
+              </div>
               <h5 class="text-[17px] text-center font-bold text-white">
                 Apply for IPO
               </h5>
@@ -1209,13 +1226,13 @@
             <div
               class="pm-card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl"
             >
-            <div class="div overflow-hidden rounded-xl">
+              <div class="div overflow-hidden rounded-xl">
                 <img
                   class="w-[145px] pm-img duration-300"
                   src="https://assetscdn1.paytm.com/images/catalog/view_item/800760/1618831809222.png"
                   alt=""
                 />
-            </div>
+              </div>
               <h5 class="text-[17px] text-center font-bold text-white">
                 Invest in <br />
                 ETFs
@@ -1224,13 +1241,13 @@
             <div
               class="pm-card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl"
             >
-            <div class="div overflow-hidden rounded-xl">
+              <div class="div overflow-hidden rounded-xl">
                 <img
                   class="w-[145px] pm-img duration-300"
                   src="https://assetscdn1.paytm.com/images/catalog/view_item/728896/1618575990183.png"
                   alt=""
                 />
-            </div>
+              </div>
               <h5 class="text-[17px] text-center font-bold text-white">
                 Buy Gold
               </h5>
@@ -1238,13 +1255,13 @@
             <div
               class="pm-card bg-lightSky h-[250px] flex flex-col items-center gap-6 p-2 rounded-xl"
             >
-            <div class="div overflow-hidden rounded-xl">
+              <div class="div overflow-hidden rounded-xl">
                 <img
                   class="w-[145px] pm-img duration-300"
                   src="https://assetscdn1.paytm.com/images/catalog/view_item/728899/1618576408440.png"
                   alt=""
                 />
-            </div>
+              </div>
               <h5 class="text-[17px] text-center font-bold text-white">
                 Invest in <br />
                 Mutual Funds
