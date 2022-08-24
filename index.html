@@ -39,6 +39,10 @@
       .hero-btn:hover .play {
         fill: #000000;
       }
+
+      .learn-btn:hover .hr {
+        transform: scale(1);
+      }
     </style>
   </head>
   <title>Paytm-clone</title>
@@ -293,9 +297,7 @@
         <h1 class="text-4xl font-bold text-white mb-6">
           Book &amp; Buy on Paytm.
         </h1>
-        <div
-          class="buy-cards flex justify-start gap-x-10 text-white flex-wrap"
-        >
+        <div class="buy-cards flex justify-start gap-x-10 text-white flex-wrap">
           <div
             class="card w-[155px] p-4 flex flex-col items-start justify-center text-[17px] font-medium rounded-md hover:bg-[#0C3E80] duration-100"
           >
@@ -526,9 +528,7 @@
             <div class="flex items-center justify-start mb-8 xl:mb-12">
               <img
                 class="w-48 mr-3"
-                src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png
-
-                                "
+                src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png"
                 alt=""
               />
             </div>
@@ -543,10 +543,47 @@
                 next month.
               </span>
               <div
-                class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+                class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
               >
                 <span>Learn More</span>
-                <img src="./assets/arrow.svg" alt="" />
+                <!-- hr svg-->
+                <svg
+                  class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  fill="#ffffff"
+                >
+                  <g>
+                    <rect
+                      fill="none"
+                      fill-rule="evenodd"
+                      height="24"
+                      width="24"
+                    />
+                    <g>
+                      <path
+                        d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                        fill-rule="evenodd"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <!-- arrow svg -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -632,10 +669,46 @@
           </div>
           <a href="https://www.paytmbank.com/AccountOpening">
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[185px] font-semibold bg-blue text-white pl-4 py-6 rounded-lg"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[185px] font-semibold bg-blue text-white pl-4 py-6 rounded-lg hover:bg-[#042153] relative duration-200"
             >
-              <span class="text-[20px]">Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <span class="text-[20px]">Learn More</span><!-- hr svg-->
+              <svg
+                class="hr absolute top-[27px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -667,10 +740,47 @@
           </span>
           <a class="sec-card-btn" href="https://www.paytmmoney.com/">
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
             >
               <span>Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <!-- hr svg-->
+              <svg
+                class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -704,10 +814,47 @@
           </span>
           <a class="sec-card-btn" href="https://www.paytmmoney.com/">
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
             >
               <span>Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <!-- hr svg-->
+              <svg
+                class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -738,10 +885,47 @@
           </span>
           <a class="sec-card-btn" href="https://www.paytmmoney.com/">
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
             >
               <span>Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <!-- hr svg-->
+              <svg
+                class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -770,10 +954,47 @@
               powers India’s largest brands and even the Paytm App
             </span>
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
             >
               <span>Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <!-- hr svg-->
+              <svg
+                class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </div>
           <img
@@ -797,10 +1018,47 @@
               solutions for all kind of merchants
             </span>
             <div
-              class="hero-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px]"
+              class="learn-btn flex items-center justify-center gap-x-3 w-[160px] font-semibold bg-blue text-white pl-2.5 py-3 rounded-[30px] hover:bg-lightSky relative duration-200"
             >
               <span>Learn More</span>
-              <img src="./assets/arrow.svg" alt="" />
+              <!-- hr svg-->
+              <svg
+                class="hr absolute top-[12px] right-[22px] origin-left scale-0 duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 24 24"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="20px"
+                fill="#ffffff"
+              >
+                <g>
+                  <rect
+                    fill="none"
+                    fill-rule="evenodd"
+                    height="24"
+                    width="24"
+                  />
+                  <g>
+                    <path
+                      d="M19,13H5c-0.55,0-1-0.45-1-1v0c0-0.55,0.45-1,1-1h14c0.55,0,1,0.45,1,1v0 C20,12.55,19.55,13,19,13z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <!-- arrow svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#FFFFFF"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"
+                />
+              </svg>
             </div>
           </div>
           <img
